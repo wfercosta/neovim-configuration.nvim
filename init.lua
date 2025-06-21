@@ -138,5 +138,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- Install the plugins manager
 require('modules.lazy-nvim').setup({
   require('plugins.which-key'),
+  require('plugins.guess-ident'),
   require('plugins.telescope')
 })
