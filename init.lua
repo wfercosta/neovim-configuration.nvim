@@ -135,7 +135,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- Install the plugins manager
-require("modules.lazy-nvim").setup({
+require("core.lazy-nvim").setup({
 	require("plugins.which-key"),
 	require("plugins.guess-ident"),
 	require("plugins.telescope"),
@@ -148,3 +148,6 @@ require("modules.lazy-nvim").setup({
 	require("plugins.mini"),
 	require("plugins.nvim-treesitter"),
 })
+
+-- Enalbe LSPs
+vim.lsp.enable("gopls")
